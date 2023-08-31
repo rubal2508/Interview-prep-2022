@@ -239,8 +239,20 @@ Aug
 -- 28: Implement Stack using Queues
 -- 29: Minimum Penalty for a Shop
 -- 30: Minimum Replacements to Sort the Array
--- 31:
+-- 31: Minimum Number of Taps to Open to Water a Garden
 
+Sep 
+--  1:
+--  2:
+--  3:
+--  4:
+--  5:
+--  6:
+--  7:
+--  8:
+--  9:
+-- 10:
+-- 11:
 
 
 
