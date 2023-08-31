@@ -1,0 +1,77 @@
+
+- why dont we need pointers in java, when variabes are passed by ref and when by val 
+- 
+
+System.out.println(Arrays.deepToString(dp).replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
+System.out.println(Arrays.toString(nums));
+
+
+Arrays.stream(dp).forEach(a -> Arrays.fill(a, -1));
+
+
+
+for (Map.Entry<String, Object> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Object value = entry.getValue();
+    // ...
+}
+
+
+
+
+Max heap :
+    PriorityQueue<Integer> queue = new PriorityQueue<>(10, Collections.reverseOrder());
+
+
+
+class Sortbyroll implements Comparator<Student> {
+    // Sorting in ascending order of roll number
+    public int compare(Student a, Student b){
+        return a.rollno - b.rollno;
+    }
+}
+ 
+
+
+
+StringBuilder pattern = new StringBuilder(word);
+myName.setCharAt(i, '*'); 
+String s = myName.toString();
+
+
+
+
+System.out.println(
+                String.format("%32s", Integer.toBinaryString(n)).replace(' ', '0') 
+        );
+
+
+
+
+check stack top : peek() 
+    others : push(), pop()
+
+
+
+
+
+StringBuilder : 	append(), 	toString()
+
+
+
+
+sort 2d array int[][] time intervals : interval that starts early shall come before
+
+    Arrays.sort(intervals, (a,b) -> {
+        if(a[0] == b[0]) return a[1] - b[2];
+        else return a[0] - b[0];
+    });
+
+
+Convert list to array :
+    intFoo[] array = list.toArray(new Foo[0]);
+
+convert list of array to 2d array :
+
+    ArrayList<int[]> solList = new ArrayList<>();
+    int [][] final = solList.toArray(new int[0][]);

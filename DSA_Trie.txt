@@ -1,0 +1,4 @@
+
+- Implement Trie Prefix Tree
+- Word Search II : used too much extra code of existing trie hence slow, need to optimise for this problem
+- Design Add And Search Words Data Structure : 

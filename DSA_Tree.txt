@@ -1,0 +1,30 @@
+
+- Invert Binary Tree	
+- Maximum Depth of Binary Tree	
+- Diameter of Binary Tree	
+- Balanced Binary Tree	
+- Same Tree	
+- Subtree of Another Tree	
+- Lowest Common Ancestor of a BST	
+- Binary Tree Level Order Traversal
+- Binary Tree Right Side View (same as level order)
+- Count Good Nodes in Binary Tree
+- Validate Binary Search Tree : Do in order traversal 
+- Kth Smallest Element in a BST 
+- Construct binary tree from preorder and inorder traversal (SOme tricky part in it, got most of it in first time, need to revise)
+- Binary Tree Maximum Path Sum : (Not hard, use diameter logic, there weight of every node is 1 here weight is equal to value. Make sure to deal with negative weights)
+- Serialize and Deserialize Binary Tree : Saw hint, then able to do
+
+
+- Lowest Common Ancestor of a Binary Tree (Hard to think on your own, very small solution, need to revise)
+- Binary Tree Zigzag Level Order Traversal
+- Maximum Width of Binary Tree (TODO)
+- Vertical Width of a Binary Tree
+
+
+
+
+
+
+
+

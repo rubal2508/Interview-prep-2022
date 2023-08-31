@@ -1,0 +1,56 @@
+Neetcode :
+
+- Number of Islands : Flod fill algo 
+- Max Area of Island : Flod fill algo 
+- Pacific Atlantic Water Flow : do dfs from ocean to inside
+- Surrounded Regions : do dfs from outside
+- Rotting Oranges : used to approach of As Far from Land as Possible
+- Course Schedule : used dfs
+- Course Schedule II : used Kahn's algo 
+- Redundant Connection : disjoint set, union find algo 
+- Network Delay Time : Dijkastra algo, shortest path from a src
+- Swim in Rising Water : modified Dijkastra. Thought of brute force on my but but it would have caused tle so saw approach in video 
+- Cheapest Flights Within K Stops : saw video, used bellmann ford, nice problem 
+- Reconstruct Itinerary : very interesting, saw the video 
+- Min Cost to Connect All Points : prims algo, need to learn the impl
+- Clone Graph : serious backtracking, wasnt intuitive, saw sol 
+- Word Ladder : kind hard, saw sol
+
+
+Topics :
+
+1. BFS : O(V+E)
+2. DFS : O(V+E)
+
+3. Topological Sort :  
+    - Recursive : O(V+E)
+    - Iterative : Kahn's Algo  O(V+E) : Indegree of vertices and queue, take nodes with 0 indegree first
+
+4. Cycle Detection :
+    - DFS : maintain a recursive stack array to detect back edges
+    - BFS : Kahn's algo 
+    - for undirected graph : maintain a parent variable, if any neighbour is visited and not parent, its a cycle
+
+5. Shortest Path :
+    - Dijkastra's Algo : O(E.logV) (Same as ElogE) : Single source shortest path : Non negative weight
+    - Bellmanford Algo : O(E.V) : Single source shortest path : Any kind of weight 
+    - Floyd Warshall : O(V^3) : Shortest path btw all vertex pairs 
+
+6. Minimum spanning tree : 
+    - Prim's Algo : O(E.logV) (similar to Dijkastra's) : Uses priority queue
+    - Kruskal's Algo : O(E.logV) : Uses disjoint sets union (Better)
+
+7. Articulation point and bridges :  O(V+E) : smart dfs 
+8. Kosaraju algo : for minimum number of strongly connected components : directed graph
+9. Disjoin set union 
+10. Network flow (usually not asked) : ford fulkerson
+
+
+
+Problems :
+
+- Number of Provinces : BFS 
+- Reachable Nodes With Restrictions : BFS 
+- Course Schedule : Cycle detection
+- Course Schedule II : Cycle detection
+

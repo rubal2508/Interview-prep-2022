@@ -1,0 +1,69 @@
+
+21 Aug 2023:
+
+- Merge Two Binary Trees : easy 
+
+- Design Circular Queue : easy 
+
+- Climbing Stairs : easy 
+
+- Maximum Product of the Length of Two Palindromic Subsequences : Good
+    did using simple recurssion bcz low constraints but watched video for optimal solution
+    video has a completely diff more complex solution using bitmask and hashmap
+
+- Remove All Adjacent Duplicates in String II : Good 
+    I was thinking Sliding Window but priyasha thought of a simple stack solution 
+
+
+
+
+22 Aug 2023:
+
+- Unique Email Addresses : easy 
+
+- Permutations : revise 
+    took time to hit, but simple backtracking. Should revise
+
+- Permutations II : Revise 
+    Did using hashSet and pre question 
+    Not the best way to do, doing unnecessary iterations, saw video for better sol 
+    
+- Longest Consecutive Sequence : Revise 
+    Priyasha suggested, couldnt think on my own 
+
+
+- Binary Tree Maximum Path Sum : Good, Able to in one go
+
+
+23 Aug 2023:
+
+- Product of Array Except Self :
+    did using 2 arrays
+    can store values of those two arrays in solution array itself 
+
+
+
+
+30 Aug 2023:
+
+- Merge Intervals : Revise 
+    Easy concept but java language concepts like custom comparator, converting list of array to 2d array 
+
+
+- Frog Jump : Revise
+    Very very good dp problem 
+    Used top down dp, time limit exceeded (worked after minor optimization)
+    saw youtube solution : could do  using bottom up db 
+
+
+
+
+31 Aug 2023:
+
+- Word Search : backtracking, easy 
+
+- Valid Perfect Square : seemed easy, ignored 
+- Remove Nth Node From End of List : ignored, seemed easy
+
+- Burst Balloons : 
+    A problem I always wanted to revise

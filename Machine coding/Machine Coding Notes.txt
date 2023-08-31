@@ -1,0 +1,89 @@
+
+
+5 Step process :
+
+- Gather All Requirements
+    • Ask Questions & Discuss Assumptions 
+
+- Create Use-case (UML) Diagram
+    • Create a box with name of system on top
+    
+    • Identification of Actors : 
+                primary actors on left (initiate actions)
+                secondary actors on right (only responds to actions from system) 
+
+    • Identification of Use-Cases : 
+        actions taken by actors : search for verbs in requirements
+    
+    • Adding Associations : connect actors with use cases
+        • Identification of Inclusive Use-cases : break use cases into smaller use cases
+        • Identification of Extension Use-cases : (usually ignored in mvp 1)
+        • Identification of generalisation/Inheritence of actors: (modify Associations accordingly)
+
+
+- Create Class Diagrams
+    • Tag all the nouns in requirements : App, movies, shows, user, shows, registered user, ticket, theatre 
+    • Tag all the nouns in assumptions : screen, guest user, language, genre 
+    • make class for each noun and draw relationships btw them 
+
+- Create DB Diagram 
+- Create Skeleton Code
+- Complete code implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- UML Diagram : 
+    - A box:    the system 
+
+    - Actor:    External agents who will interact with system. User, partners, restaurants, theatres
+                primary actors on left (initiate actions)
+                secondary actors on right (only responds to actions from system) 
+
+    - Use case: Oval, represent a task in system. eg Login, Register, Search, Book ticket, add movie, update show
+                relevant actors are connected with use cases with solid lines
+            
+
+    - Relationships :
+        Base use case, Inclusive use case : dashed arrow : for eg Book ticket -> select show & make payment
+        Dependant use case : may or may not trigger : for eg error
+        relationships between actors 
+
+
+- Class diagrams :
+    - Association : 1-1, 1-Many, Many-Many 
+    - Aggregation : when a class is part of another class but can exist independantly: hollow diamond : for eg school and teacher
+    - Composition : when a class is part of another class but can not exist independantly: filled diamond : for eg account & transaction history 
+    - Generalisation : inheritance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Next Steps :
+- Quicker under 45 mins 
+- Use HashMap instead of DB 
+- Use terminal instead of APIs 
+- Add UTs 
+- Design patterns, SOLID principles 
+- use interfaces and abstract classes
+

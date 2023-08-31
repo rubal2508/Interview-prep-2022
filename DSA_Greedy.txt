@@ -1,0 +1,25 @@
+
+Neetcode :
+
+- Maximum Subarray : Kedance algo, easy 
+- Jump Game 
+- Jump Game II : tricky 
+- Gas Station : tricky, not intuitive
+- Hand of Straights : tricky
+- Merge Triplets to Form Target Triplet : tricky
+- Partition Labels : tricky but did own my own
+- Valid Parenthesis String : tricky
+
+
+
+
+
+Greedy :
+
+1. Activity Selection : sort by finishing time, always take the first activity and then so on 
+
+2. Fractional Knapsack 
+
+3. Job Sequencing : take most profitable job first and do it as late as possible
+
+4. Huffman Coding (TODO)

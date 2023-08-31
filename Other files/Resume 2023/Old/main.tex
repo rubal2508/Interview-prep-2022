@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aman Garg} \\ \vspace{3pt}
+    \small +91 740-415-2804 $|$ \href{mailto:amangarg25aug@gmail.com}{\underline{amangarg25aug@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ag25aug}{\underline{linkedin.com/in/ag25aug}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science Pilani}{Pilani, Rajasthan}
+      {Bachelor of Engineering in Computer Science \& M.Sc. in Mathematics}{Aug 2016 -- Jul 2021}
+    \resumeSubheading
+      {DAV Centenary Public School}{Rohtak, Haryana}
+      {Class 12th: 92.2\%, Class 10th: 10CGPA}{2002 -- 2016} 
+  \resumeSubHeadingListEnd
+
+
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{{Java, Spring Boot, CI/CD, SQL, NoSQL, Apache Kafka}}}
+%  \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walmart Global Tech India}{ }
+      {Software Engineer 2}{Jul 2021 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Designed, developed, tested, and deployed software solutions at \textbf{scale} for Walmart Fulfillment Services, enabling sellers to use Walmart's \textbf{Supply Chain as a Service} and sell their products online. This is expected to \textbf{increase GMV by \$5 billion USD} by 2025 in Canada and Mexico. \textbf{Technologies used}: Java, Spring Boot, Apache Kafka, Apache Airflow, Apache Spark, Azure SQL, Azure Cosmos, Apache Hive, CI/CD, GCP}
+        
+        \resumeItem{Awarded for \textbf{saving the cost of packaging 2.6 million} units per year per FC. Improved cartonization logic used in Walmart International by minimizing the number of boxes needed to pack the items. Ensured \textbf{end-to-end delivery}. Created extensive \textbf{documentation that is now used as a benchmark} for the entire team.}
+
+        \resumeItem{Awarded for working on distribution team's first \textbf{cloud-based SaaS} component to track and act on inbound exceptions in warehouse. \textbf{Reduced manpower by 75\%}. Actively collaborated with multiple teams to set up and document the initial infrastructure. Technologies used: \textbf{GraphQL}, Kubernetes.}
+
+        \resumeItem{Awarded for \textbf{taking the initiative to implement CI/CD} for 5 repos as an engineering excellence initiative.}
+        
+        \resumeItem{Onboarded and \textbf{mentored} 2 interns, 2 FTEs, and 4 vendors on various projects and teams.}
+       
+        \resumeItem{Worked in data platform team as a summer intern in 2020. The team was responsible for \textbf{processing around 10 million transactions per day} from all Walmart stores across the world. Received a full-time offer after completing the internship.}
+        
+        \resumeItem{Other achievements: \textbf{helped the HR team} create tests for campus recruitments, organized fun events, published newsletters, and participated in \textbf{hackathons}.}
+      
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vymo}{}
+      {Software Engineer Intern}{Aug 2020 -- Dec 2020}
+      \resumeItemListStart
+        \resumeItem{Added \textbf{8 new features} in Self-Serve platform. It helped in reducing the turnaround time of developers from \textbf{2 weeks to a few minutes}. Technologies used: Java \& Node.js}
+        \resumeItem{Collaborated with multiple teams for \textbf{end-to-end} delivery of the features i.e. from designing, modeling, and development to QA sign-off, production release, documentation, and migration of old data. \textbf{Received a full-time offer} after completing the internship.}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+          {\textbf{Voice assistant} $|$ \emph{Django, Python, Open AI, Generative AI, Machine Learning}}{\small{\href{https://github.com/rubal2508/Ctrl-Alt-Elite}{\underline{GitHub link}}}}
+          \resumeItemListStart
+            \resumeItem{Led a team of 4 to create an \textbf{AI-powered voice assistant} for an e-commerce company using ChatGPT APIs at a \textbf{hackathon}.}
+            \resumeItem{Enabled user to use voice commands to perform actions like \textbf{search for ingredients}, get user sentiments, return/replace orders, and FAQs.}
+            
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Instagram Bot} $|$ \emph{Python, Selenium, Web scraping, Automation}}{\small{\href{https://github.com/rubal2508/Project-InstaBot}{\underline{GitHub link}}}}
+          \resumeItemListStart
+            \resumeItem{\textbf{Automated Instagram processes} including login, follow/unfollow, searching, liking/viewing posts and stories.}
+            \resumeItem{Created a database of popular food bloggers, tracking their posts, likes-to-followers ratio, and latest hashtags being used in the industry.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+\section{Skills \& Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical Skills}{: Java, Spring Boot, CI/CD, SQL, NoSQL, Apache Kafka} \\
+     \textbf{Hobbies}{: Art \& Craft, Sketching, Playing flute, Learning about history} \\
+     \textbf{Leadership}{: Led and taught a team of 8 students to paint 18x6ft panels for the university's cultural fest in 3rd year.} 
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,252 @@
+
+- Best Team With No Conflicts (31 jan)
+
+
+
+Feb
+- Greatest Common Divisor of Strings (1 feb)
+- Verifying an Alien Dictionary (2 feb)
+- Zigzag Conversion (3 feb)
+- Permutation in String (4 feb)
+- Find All Anagrams in a String (5 feb)
+- Shuffle the Array (6 feb)
+- Fruit Into Baskets (7feb)
+- Jump Game II (8 feb) - did with dp, need to understand greedy sol
+- Naming a Company (9 feb)
+- As Far from Land as Possible (10 feb) : start from land and move away
+- Shortest Path with Alternating Colors (11 feb) : did after watching neetcode video but not sure how to do in future on my own
+- Minimum Fuel Cost to Report to the Capital (12 feb) : did after watching neetcode video but not sure how to do in future on my own
+- Count Odd Numbers in an Interval Range (13 feb) : easy
+- Add Binary (14 feb) : copied, easy didnt want to do
+-- Add to Array-Form of Integer (15 feb) : copied, easy didnt want to do
+- Maximum Depth of Binary Tree (16 feb) : too easy, skipped
+- Minimum Distance Between BST Nodes (17 feb) : easy
+- Invert Binary Tree (18 feb) : too easy, skipped
+-- Binary Tree Zigzag Level Order Traversal : (19 feb) : wasnt in mood to do
+- Search Insert Position (20 feb) : too easy 
+- Single Element in a Sorted Array (21 feb) : good trick
+- Capacity To Ship Packages Within D Days (22 feb) : good problem, there was a small bug in my code which I didnt understand and copied from sol 
+- IPO (23 feb) : greedy hard, saw sol 
+- Minimize Deviation in Array (24feb) : hard, saw sol : learnt tree set
+-- Best Time to Buy and Sell Stock (25 feb) : copied, didnt wanna do 
+- Edit Distance (26 feb) : have done before
+-- Construct Quad Tree (27 feb) : unwell, copied
+-- Find Duplicate Subtrees (28 feb) : copied
+
+
+
+March 
+-- 1 : Sort an Array : Good, didnt do, Revise later
+-- 2 : String Compression : Good, didnt do, Revise later
+-- 3 : Find the Index of the First Occurrence in a String : Good, didnt do, Revise later
+-  4 : Count Subarrays With Fixed Bounds : Very very good, saw solution
+-  5 : Jump Game IV : hard, did it using hints but got tle
+-  6 : Kth Missing Positive Number : Easy but not boring
+-  7 : Minimum Time to Complete Trips : Binary search, easy but not boring
+-  8 : Koko Eating Bananas : normal binary search 
+-  9 : Linked List Cycle II 
+-  10: Linked List Random Node : Easy if you know reservoir sampling
+-  11: Convert Sorted List to Binary Search Tree : Easy
+-- 12: Merge k Sorted Lists : Todo
+-- 13: Symmetric Tree
+-- 14: Sum Root to Leaf Numbers : good, toDo 
+-- 15: Check Completeness of a Binary Tree : toDO
+-- 16: Construct Binary Tree from Inorder and Postorder Traversal : toDo 
+-- 17: Implement Trie (Prefix Tree) : done before, do again
+-- 18: Design Browser History : todo 
+-- 19: Design Add and Search Words Data Structure : toDO 
+-  20: Can Place Flowers : greedy easy 
+-  21: Number of Zero-Filled Subarrays : easy but had to use long
+-  22: Minimum Score of a Path Between Two Cities : good, union find, bfs, dfs
+-  23: Number of Operations to Make Network Connected : union find, could devise the approach and wrote solution but editorial solution was more optimal
+-  24: Reorder Routes to Make All Paths Lead to the City Zero : union find, saw sol, good quest
+-  25: Count Unreachable Pairs of Nodes in an Undirected Graph : union find, learnt optimization of rank and path compression, easy after that
+-  26: Longest Cycle in a Graph : graph dfs, not very hard but saw approach in sol 
+-  27: Minimum Path Sum : dp, easy 
+-  28: Minimum Cost For Tickets : dp easy
+-- 29: Reducing Dishes
+-- 30: Scramble String
+-- 31: Number of Ways of Cutting a Pizza
+
+
+
+April
+-- 1 : Binary Search
+-- 2 : Successful Pairs of Spells and Potions
+-- 3 : Boats to Save People
+-- 4 : Optimal Partition of String
+-- 5 : Minimize Maximum of Array
+-- 6 : Number of Closed Islands
+-- 7 : Number of Enclaves
+-- 8 : Clone Graph
+-- 9 : Largest Color Value in a Directed Graph
+-- 10: Valid Parentheses
+-- 11: Removing Stars From a String
+-- 12: Simplify Path
+-- 13: Validate Stack Sequences
+-- 14: Longest Palindromic Subsequence
+-- 15: Maximum Value of K Coins From Piles
+-- 16: Number of Ways to Form a Target String Given a Dictionary
+-- 17: Kids With the Greatest Number of Candies
+-- 18: Merge Strings Alternately
+-- 19: Longest ZigZag Path in a Binary Tree
+-- 20:  Maximum Width of Binary Tree
+-- 21: Profitable Schemes
+-- 22: Minimum Insertion Steps to Make a String Palindrome
+-- 23: Restore The Array
+-- 24: Last Stone Weight
+-- 25: Smallest Number in Infinite Set
+-- 26: Add Digits
+-  27: Bulb Switcher
+-- 28: Similar String Groups
+-- 29: Checking Existence of Edge Length Limited Pathsy 
+-- 30: Remove Max Number of Edges to Keep Graph Fully Traversable
+
+
+
+May
+-  1 : Average Salary Excluding the Minimum and Maximum Salary : Easy
+-- 2 : Sign of the Product of an Array
+-- 3 : Find the Difference of Two Arrays
+-- 4 : Dota2 Senate
+-- 5 : Maximum Number of Vowels in a Substring of Given Length
+-- 6 : Number of Subsequences That Satisfy the Given Sum Condition
+-- 7 : Find the Longest Valid Obstacle Course at Each Position
+-- 8 : Matrix Diagonal Sum
+-- 9 : Spiral Matrix
+-- 10: Spiral Matrix II 
+-  11: Uncrossed Lines : simple 2d dp 
+-  12: Solving Questions With Brainpower : med dp, trick is to fill dp in reverse
+-  13: Count Ways To Build Good Strings : medium dp, faced issues with modulo
+-  14: Maximize Score After N Operations : dp with bitmasking, could not do 
+-  15: Swapping Nodes in a Linked List : easy , took more time than needed
+-  16: Swap Nodes in Pairs : easy, took more time than needed
+-  17: Maximum Twin Sum of a Linked List
+-  18: Minimum Number of Vertices to Reach All Nodes : graph, good trick, check indegrees
+-  19: Is Graph Bipartite : graph good question, did it in first attempt, uses bfs 
+-  20: Evaluate Division : understood sol but too lazy to solve
+-  21: Shortest Bridge : graph my sol was not optimal, definitely good problem
+-  22: Top K Frequent Elements : easy concept but should revise, some goof library functions
+-  23: Kth Largest Element in a Stream
+-  24: Maximum Subsequence Score : very diff to think on our own, didnt do myself
+-  25: New 21 Game : very hard, couldnt understand
+-- 26: Stone Game II : hard, couldnt understand
+-- 27: Stone Game III
+-  28: Minimum Cost to Cut a Stick : really enjoyed but dont know why greedy won t work 
+-  29: Design Parking System : super easy 
+-  30: Design HashSet : normal, didnt wanna do it 
+-  31: Design Underground System : easy, code is tedious
+
+
+
+June
+-  1 : Shortest Path in Binary Matrix : good ques, plain BFS, not difficult
+-  2 : Detonate the Maximum Bombs : good dfs ques, not difficult
+-  3 : Time Needed to Inform All Employees : good ques, dfs, my sol was even better than leet code. initial approach was wrong, I thought to take max of each level
+-  4 : Number of Provinces : done before, easy 
+-  5 : Check If It Is a Straight Line : easy, didnt do 
+-  6 : Can Make Arithmetic Progression From Sequence : v easy
+-  7 : Minimum Flips to Make a OR b Equal to c : weird bit manipulation
+-  8 : Count Negative Numbers in a Sorted Matrix : easy 
+-  9 : Find Smallest Letter Greater Than Target
+-  10: Maximum Value at a Given Index in a Bounded Array : greedy good, didnt do
+-  11: Snapshot Array : good ques of binary search. New array for each index and it stores snap_id and value
+-  12: Summary Ranges : easy 
+-  13: Equal Row and Column Pairs : use hashing, easy
+-  14: Minimum Absolute Difference in BST : in order traversal 
+-  15: Maximum Level Sum of a Binary Tree : bfs use queue
+-- 16: Number of Ways to Reorder Array to Get Same BST : too hard 
+-- 17: Make Array Strictly Increasing
+-- 18: Number of Increasing Paths in a Grid
+-  19: Find the Highest Altitude
+-- 20: K Radius Subarray Averages
+-- 21: Minimum Cost to Make Array Equal
+-- 22: Best Time to Buy and Sell Stock with Transaction Fee
+-- 23: Longest Arithmetic Subsequence
+-- 24: Tallest Billboard
+-- 25: Count All Possible Routes
+-- 26: Total Cost to Hire K Workers
+-- 27: Find K Pairs with Smallest Sums
+-- 28: Path with Maximum Probability
+-- 29: Shortest Path to Get All Keys
+-- 30: Last Day Where You Can Still Cross
+
+
+
+July
+--  1: Fair Distribution of Cookies
+--  2: Maximum Number of Achievable Transfer Requests
+--  3: Buddy Strings
+--  4: Single Number II
+--  5: Longest Subarray of 1's After Deleting One Element
+--  6: Minimum Size Subarray Sum
+--  7: Maximize the Confusion of an Exam
+--  8: Put Marbles in Bags
+--  9: Substring With Largest Variance
+-- 10: Minimum Depth of Binary Tree
+-- 11: All Nodes Distance K in Binary Tree
+-- 12: Find Eventual Safe States
+-- 13: Course Schedule
+-- 14: Longest Arithmetic Subsequence of Given Difference
+-- 15: Maximum Number of Events That Can Be Attended II
+-- 16: Smallest Sufficient Team
+-- 17: Add Two Numbers II
+-- 18: LRU Cache
+-- 19: Non-overlapping Intervals
+-- 20: Asteroid Collision
+-- 21: Number of Longest Increasing Subsequence
+-- 22: Knight Probability in Chessboard
+-- 23: All Possible Full Binary Trees
+-- 24: Pow(x, n)
+-- 25: Peak Index in a Mountain Array
+-- 26: Maximum Running Time of N Computers
+-- 27: Maximum Running Time of N Computers
+-- 28: Predict the Winner
+-- 29: Soup Servings
+-- 30: Strange Printer
+-- 31: Minimum ASCII Delete Sum for Two Strings
+
+
+
+Aug
+--  1: Combinations
+--  2: Permutations
+--  3: Letter Combinations of a Phone Number
+--  4: Word Break
+--  5: Unique Binary Search Trees II
+--  6: Number of Music Playlists
+--  7: Search a 2D Matrix
+--  8: Search in Rotated Sorted Array
+-   9: Minimize the Maximum Difference of Pairs : greedy Binarysearch, hard. half solved but saw sol
+-  10: Search in Rotated Sorted Array II : done before 
+-  11: Coin Change II : easy dp
+-  12: Unique Paths II : easy dp
+-  13: Check if There is a Valid Partition For The Array : easy dp
+-  14: Kth Largest Element in an Array : Easy 
+-- 15: Partition List
+-- 16: Sliding Window Maximum
+-- 17: 01 Matrix
+-  18: Maximal Network Rank
+-- 19: Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
+-- 20: Sort Items by Groups Respecting Dependencies
+-- 21: Repeated Substring Pattern
+-- 22: Excel Sheet Column Title
+-- 23: Reorganize String
+-- 24: Text Justification
+-- 25: Interleaving String
+-- 26: Maximum Length of Pair Chain
+-- 27: Frog Jump
+-- 28: Implement Stack using Queues
+-- 29: Minimum Penalty for a Shop
+-- 30: Minimum Replacements to Sort the Array
+-- 31:
+
+
+
+
+
+
+RETAILLINK/SVCMFTEFEDXPRODCA_WD
+
+&X%EN4atH8ZA3&e18#bV42%A1#Dd 
+

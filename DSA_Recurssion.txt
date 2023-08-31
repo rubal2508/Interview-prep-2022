@@ -1,0 +1,20 @@
+
+Recursion and Backtracking
+
+- Rat in a maze / Unique Paths 3 
+- N queen problem
+- Sudoku 
+
+- make subsets
+- combination sums (easy but couldnt do on my own, revise)
+- permutations (did it with slight hint)
+- Subsets II (needed hint on how to avoid duplicates)
+- combination sums II (amalgum of combination sums and Subsets II)
+- Word Search (fun to solve, kinda like rat maze)
+- Palindrome Partitioning (easy, needed small hint but same as subset and combination)
+- Letter Combinations of a Phone Number (easy with a slight hint)
+
+
+ 
+
+ -

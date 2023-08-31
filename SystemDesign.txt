@@ -1,0 +1,47 @@
+
+
+Github : system-design-primer
+- Consistent hashing : Ring based hashing with each server being mapped to multiple places in the ring, so that adding and removing servers is easily managed 
+
+- Message queue : advantage not clear, how it helps in resiliency
+
+- microservices
+
+
+
+Rachit Jain / Other interview Exp : 
+- Educative.IO 
+- https://rachitiitr.com/
+- stop doing leetcode, do que where you need to take input and print output
+- 
+
+
+
+Machine coding :
+- Learn design pattern
+- SOLID principals
+
+DB schema design :
+- 
+
+
+Tech blogs :
+- yes you should give estimates
+- event driven architecture, event-based compute : kafka, Serverless, 
+
+
+
+
+Design to practise :
+- Google doc 
+- Excel / Sheets 
+- 
+
+
+
+Key words : 
+Machine coding, LLD, object oriented design
+System Design, HLD 
+
+ 
+
