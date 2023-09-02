@@ -63,7 +63,7 @@ StringBuilder : 	append(), 	toString()
 sort 2d array int[][] time intervals : interval that starts early shall come before
 
     Arrays.sort(intervals, (a,b) -> {
-        if(a[0] == b[0]) return a[1] - b[2];
+        if(a[0] == b[0]) return a[1] - b[1];
         else return a[0] - b[0];
     });
 
@@ -75,3 +75,17 @@ convert list of array to 2d array :
 
     ArrayList<int[]> solList = new ArrayList<>();
     int [][] final = solList.toArray(new int[0][]);
+
+
+
+Sort list :
+    ArrayList<int[]> intervals = new ArrayList<>();
+    
+    Collections.sort(intervals, (a,b) -> {
+            if(a[0] == b[0]) return b[1] - a[1] ;
+            else return a[0] - b[0];
+    });
+
+    // interval that starts early will come before, if clash, then interval that ends later will come before 
+
+
