@@ -244,14 +244,14 @@ Aug
 Sep 
 --  1: Counting Bits
 --  2: Extra Characters in a String
---  3:
---  4:
---  5:
---  6:
---  7:
---  8:
---  9:
--- 10:
+--  3: Unique Paths
+--  4: Linked List Cycle
+--  5: Copy List with Random Pointer
+--  6: Split Linked List in Parts
+--  7: Reverse Linked List II
+--  8: Pascal's Triangle
+--  9: Combination Sum IV
+-- 10: Count All Valid Pickup and Delivery Options
 -- 11:
 
 

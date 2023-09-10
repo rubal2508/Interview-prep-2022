@@ -89,3 +89,10 @@ Sort list :
     // interval that starts early will come before, if clash, then interval that ends later will come before 
 
 
+
+
+String 	indexOf(String str)
+Returns the index within this string of the first occurrence of the specified substring.
+
+s.substring(0,n);
+

@@ -81,5 +81,15 @@
 
 
 
-2 Sep 2023:
-- Extra Characters in a String
+3 Sep 2023:
+
+- Extra Characters in a String : Revise
+    Piyu gave approach, did using dp and recursion, good question 
+
+
+- Minimum Number of Days to Eat N Oranges
+    Very easy dp but memory limit exceeded, this makes it hard 
+
+
+- Number of Good Paths
+
