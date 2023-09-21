@@ -91,5 +91,10 @@
     Very easy dp but memory limit exceeded, this makes it hard 
 
 
+
+
+
+- Path With Minimum Effort
 - Number of Good Paths
+- Shortest Path Visiting All Nodes
 

@@ -252,8 +252,26 @@ Sep
 --  8: Pascal's Triangle
 --  9: Combination Sum IV
 -- 10: Count All Valid Pickup and Delivery Options
--- 11:
-
+-- 11: Group the People Given the Group Size They Belong To
+-- 12: Minimum Deletions to Make Character Frequencies Unique
+-- 13: Candy
+-- 14: Reconstruct Itinerary
+-- 15: Min Cost to Connect All Points
+-- 16: Path With Minimum Effort
+-- 17: Shortest Path Visiting All Nodes
+-- 18: The K Weakest Rows in a Matrix
+-- 19: Find the Duplicate Number
+-- 20: Minimum Operations to Reduce X to Zero
+-- 21: Median of Two Sorted Arrays
+-- 22: 
+-- 23: 
+-- 24: 
+-- 25: 
+-- 26: 
+-- 27: 
+-- 28: 
+-- 29: 
+-- 30: 
 
 
 
