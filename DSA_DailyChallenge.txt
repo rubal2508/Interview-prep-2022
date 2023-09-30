@@ -263,19 +263,36 @@ Sep
 -- 19: Find the Duplicate Number
 -- 20: Minimum Operations to Reduce X to Zero
 -- 21: Median of Two Sorted Arrays
--- 22: 
--- 23: 
--- 24: 
--- 25: 
--- 26: 
--- 27: 
--- 28: 
--- 29: 
--- 30: 
+-- 22: Is Subsequence
+-- 23: Longest String Chain
+-- 24: Champagne Tower
+-- 25: Find the Difference
+-- 26: Remove Duplicate Letters
+-- 27: Decoded String at Index
+-- 28: Sort Array By Parity
+-- 29: Monotonic Array
+-- 30: 132 Pattern
+
+
+Oct 
+--  1: 
+--  2: 
+--  3: 
+--  4: 
+--  5: 
+--  6: 
+--  7: 
+--  8: 
+--  9: 
+-- 10: 
 
 
 
 
+
+
+
+  
 RETAILLINK/SVCMFTEFEDXPRODCA_WD
 
 &X%EN4atH8ZA3&e18#bV42%A1#Dd 
