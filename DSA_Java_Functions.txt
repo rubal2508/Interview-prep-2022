@@ -96,3 +96,11 @@ Returns the index within this string of the first occurrence of the specified su
 
 s.substring(0,n);
 
+
+
+
+
+--------------------------------------------
+
+- How to fill an int[][] array with some value -1
+
