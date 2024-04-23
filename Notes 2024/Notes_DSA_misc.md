@@ -84,19 +84,89 @@ substring without repeating characters.
 - Kinda hard
 - Saw sol
 
+### [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+
+> Return true if one of s1's permutations is the substring of s2
+
+- Able to think on my own
+- Create a rolling hash or compare hashmaps
+
+### [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) ⭐️
+
+> Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string ""
+
+- Able to think on my own
+- Take pointers i,j 
+- Move j untill all required characters are covered, then move i to shorten the window as much as possible
+- How to check if our window is valid? We can do this is constant time without checking for each each character. See sol of neetcode (Maintain a count variable to see how many unique characters we need to satify)
+
+### [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) ⭐️
+
+> You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Return the max value in sliding window.
+
+- Able to think on my own immediately
+- Have a deque all numbers in a way that deque is always decreasing from left to right. deque's leftmost element is always the biggest value in current window
 
 
+## Stack
 
-<br><br><br><br><br>
+### [Min Stack](https://leetcode.com/problems/min-stack/description/) ⭐️
+> Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
+- Was able to think on my own but soluton was slightly better
 
+### [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) ⭐️⭐️⭐️
+> Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
+- Hard ques, Requires revision from time to time
 
-- Permutation in String
+## Linked List
 
-- Minimum Window Substring (Find better on neetcode) (Revise)
+### [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ⭐️
 
-- Sliding Window Maximum (Revise)
+- Struggled on this due to lack of practise
 
+``` java
+public ListNode reverseList(ListNode head) {
+    ListNode curr = head;
+    ListNode pre = null;
 
+    while(curr != null){
+        ListNode temp = curr.next;
+        curr.next = pre;
+        pre = curr;
+
+        if(temp == null) return curr;
+        curr = temp;
+    }
+    return null;
+}
+```
+
+### [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) ⭐️⭐️
+
+> Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+
+- Start both `slow` and `fast` from `head`
+- Once `fast` and `slow` pointers meet, move `slow` to `head` and then move both `fast` and `slow` one node at a time, they will meet at junction
+
+![Markdown Logo](linkedListCycle.png)
+
+### [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) ⭐️⭐️⭐️
+
+> Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive. There is only one repeated number in nums, return this repeated number.
+
+- Vaiation of above question. Difficult to think on your own
+
+### [LRU Cache](https://leetcode.com/problems/lru-cache/description/) ⭐️⭐️⭐️
+
+- Use Double linked list and hashmap
+
+### [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) ⭐️
+
+- Use heap of list nodes
+
+### [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) ⭐️⭐️⭐️
+
+- No trick, just grind and being careful about logic
 
