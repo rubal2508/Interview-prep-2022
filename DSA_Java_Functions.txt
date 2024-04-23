@@ -29,8 +29,8 @@ class Sortbyroll implements Comparator<Student> {
     public int compare(Student a, Student b){
         return a.rollno - b.rollno;
     }
-}
  
+PriorityQueue<Student> pq = new PriorityQueue<Student>(5, new Sortbyroll());
 
 
 
@@ -103,4 +103,34 @@ s.substring(0,n);
 --------------------------------------------
 
 - How to fill an int[][] array with some value -1
+
+
+- where to use .add and where to use .push 
+
+
+- How to convert ArrayList<Integer> to int[]
+
+- Queue interface functions and implementing class 
+
+- 
+
+
+
+- Convert an int[] arr to any collection like HashSet or List 
+
+
+
+- floor function in treemap : 	map.floorEntry(key)
+
+
+- How to sort a string : 
+    String test= "edcba";
+    char[] ar = test.toCharArray();
+    Arrays.sort(ar);
+    String sorted = String.valueOf(ar);
+
+
+- Converting a string to lowercase and removing all non alpha numeric characters
+
+    str = str.toLowerCase().replaceAll("[^a-z0-9]", "");
 

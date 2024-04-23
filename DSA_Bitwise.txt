@@ -1,9 +1,0 @@
-
-- Single Number : xor of all
-- Number of 1 Bits : &1 and shift right, but this doesnt work in java, saw another trick in solution
-- Counting Bits : count bits in each number 
-- Reverse Bits : small hiccup
-- Missing Number : saw sol : xor of all the number that should be there then xor with given array
-- Sum of Two Integers : saw sol : take xor, take & and << 1
-- Reverse Integer : saw sol 
-
