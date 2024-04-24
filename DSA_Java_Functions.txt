@@ -134,3 +134,8 @@ s.substring(0,n);
 
     str = str.toLowerCase().replaceAll("[^a-z0-9]", "");
 
+
+- Split the string on some character 
+
+    String[] preList = data.split(" ");
+
