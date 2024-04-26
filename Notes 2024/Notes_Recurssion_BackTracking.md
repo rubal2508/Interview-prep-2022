@@ -28,15 +28,12 @@
 
 - Amalgum of combination sums and Subsets II
 
+### [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/description/) ⭐️
+
+- Good ques, can do in 1 go
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+### [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) ⭐️
 
-- Rat in a maze / Unique Paths 3 
-- Sudoku 
-
-- Word Search (fun to solve, kinda like rat maze)
-- Palindrome Partitioning (easy, needed small hint but same as subset and combination)
-- Letter Combinations of a Phone Number (easy with a slight hint)
-
+- Good ques, can do in 1 go
 
