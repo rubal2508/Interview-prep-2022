@@ -405,15 +405,17 @@ public int superEggDrop(int k, int n) {
 
 ```
 
+
+<br><br><br><br><br><br><br><br>
+
+
 ### [Optimal Game Strategy](https://leetcode.com/problems/predict-the-winner/description/) / [Stone Game](https://leetcode.com/problems/stone-game/description/)
 
 At each turn, the player takes one of the numbers from either end of the array. Return true if Player 1 can win the game. If the scores of both players are equal, then player 1 is still the winner
 
 - If size of array is even then player 1 can alway win (he can either pick all odds or all even positions)
-- 
 
 
-<br><br>
 
 
 https://leetcode.com/problems/palindrome-partitioning-ii/description/
@@ -425,10 +427,7 @@ https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
 [matrix exponentiation]()
 
 
-## Variations of Best Time to Buy and Sell Stocks [TODO]
 
 
-
-<br><br><br><br><br><br><br><br>
 
       
