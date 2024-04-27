@@ -1,4 +1,4 @@
-# Misc DSA Notes
+# Misc Topics
 
 ## Array
 

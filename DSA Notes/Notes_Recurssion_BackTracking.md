@@ -1,4 +1,4 @@
-# DSA Recursion and Backtracking Notes
+# Recursion and Backtracking
 
 ### [N Queen](https://leetcode.com/problems/n-queens/description/) ⭐️⭐️⭐️
 - Can do 

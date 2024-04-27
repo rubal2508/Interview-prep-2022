@@ -1,4 +1,4 @@
-# DP Notes
+# DP
 
 ## NeetCode.io 1D DP
 

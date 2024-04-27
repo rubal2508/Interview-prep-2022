@@ -1,4 +1,4 @@
-# Bitwise Notes
+# Bitwise
 
 - `&` `|` `~` `^` `<<` `>>`
 - `a<<1` means `a * 2^1` &  `a<<2` means `a * 2^2`

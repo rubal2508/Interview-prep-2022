@@ -1,4 +1,4 @@
-# Maths notes
+# Maths
 
 ## Sieve of Eratosthenes
 
