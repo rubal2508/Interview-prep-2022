@@ -1,4 +1,4 @@
-# Greedy
+# Greedy and Intervals
 
 ### [Maximum Subarray Sum](https://leetcode.com/problems/maximum-subarray/) ⭐️
 - Kedane's algo
@@ -62,3 +62,12 @@ Greedy :
 3. Job Sequencing : take most profitable job first and do it as late as possible
 
 4. Huffman Coding (TODO)
+
+
+Intervals
+
+- Insert Interval : medium, did it on my own 
+- Merge Intervals : medium, did it on my own 
+- Non-overlapping Intervals : saw video 
+- Minimum Interval to Include Each Query : Heap is used, saw sol 
+ 
