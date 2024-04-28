@@ -143,19 +143,44 @@
 
 ### Neetcode Questions
 
-- Number of Islands: Flod fill algo 
-- Max Area of Island: Flod fill algo 
-- Pacific Atlantic Water Flow: do dfs from ocean to inside
-- Surrounded Regions: do dfs from outside
-- Rotting Oranges: used to approach of As Far from Land as Possible
-- Course Schedule: Cycle detection, used dfs
-- Course Schedule II: Cycle detection, used Kahn's algo 
-- Redundant Connection: disjoint set, union find algo 
-- Network Delay Time: Dijkastra algo, shortest path from a src
-- Swim in Rising Water: modified Dijkastra. Thought of brute force on my but but it would have caused tle so saw approach in video 
-- Cheapest Flights Within K Stops: saw video, used bellmann ford, nice problem 
-- Reconstruct Itinerary: very interesting, saw the video 
-- Min Cost to Connect All Points: prims algo, need to learn the impl
-- Clone Graph: serious backtracking, wasnt intuitive, saw sol 
-- Word Ladder: kind hard, saw sol
+#### Normal
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/): Flod fill algo 
+- [Max Area of Island](https://leetcode.com/problems/max-area-of-island/): Flod fill algo 
+- [Clone Graph](https://leetcode.com/problems/clone-graph/): serious backtracking, wasnt intuitive, saw sol 
+- [Walls and Gates](https://leetcode.com/problems/walls-and-gates/): Doable
+- [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/): used to approach of As Far from Land as Possible
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/): do dfs from ocean to inside
+- [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/): do dfs from outside
+- [Course Schedule](https://leetcode.com/problems/course-schedule/): Cycle detection, used dfs
+- [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/): Cycle detection, used Kahn's algo 
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/): union find and the property of tree that edges = n-1
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/): easy
+- [Redundant Connection](https://leetcode.com/problems/redundant-connection/): disjoint set, union find algo 
+- [Word Ladder](https://leetcode.com/problems/word-ladder/) ⭐️ kind hard, saw sol
+  - If we can build a graph of words (where 2 words are connected if they have 1 character diff) then we can simply run bfs and find the distance.
+  - We can optimise building the graph by having patterns as key and list of words as value. Neighbour of a word is all the lists of all patterns it can make
+
+#### Advanced
+- [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) ⭐️ 
+  - very interesting, saw the video 
+  - Sort the edges `uv` based on `v`, so neighbours in adj_list are in sorted order
+  - Cant use visited array as we can visit the nodes multiple times. So how to do?
+  - Keep removing the edges(neighbours) from adj_list once you use it, and add the node in sol list
+  - You can say you have used all edges once len(sol) = len(tickets) + 1
+  - How to backtrack? add/remove from sol list, add/remove neighbours
+  - Earlier this solution was working but now leetcode has put TLE for this
+
+- [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) ⭐️ Minimum spaning tree problem
+- [Network Delay Time](https://leetcode.com/problems/network-delay-time/) ⭐️ Dijkastra algo, shortest path from a src
+- [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) ⭐️ 
+  - modified Dijkastra. Thought of brute force on my but but it would have caused tle so saw approach in video 
+  - use pq to get the node with min weight
+  - We dont need a finalised set because weight will never be reduced, so we only use the visited set
+- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) ⭐️ 
+  - Topological sort
+  - Why are we comparng only adjacent words? why not all the word pairs?
+- [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) ⭐️ 
+  - saw video, used bellmann ford, nice problem 
+  - we need to clone dist array at each iteration because we want to limit the updates going beyond k
+
 

@@ -139,3 +139,10 @@ s.substring(0,n);
 
     String[] preList = data.split(" ");
 
+
+- set a character in string StringBuilder
+    void: sb.setCharAt(int index, char ch)
+
+
+- comparing two string lexically
+    str1.compareTo(str2)
