@@ -111,10 +111,3 @@ Collections.sort(intervals, (a,b) -> {
 ```
 
 
-
-
-<br><br><br><br><br>
-
-``` java
-
-```
