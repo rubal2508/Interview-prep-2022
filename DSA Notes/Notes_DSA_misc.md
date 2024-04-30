@@ -38,6 +38,11 @@
 
 - for each `i` store leftMax and rightMax column length
 
+<br>
+
+----
+---
+
 ## Sliding Window
 
 ### [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) ⭐️
@@ -107,6 +112,10 @@ substring without repeating characters.
 - Able to think on my own immediately
 - Have a deque all numbers in a way that deque is always decreasing from left to right. deque's leftmost element is always the biggest value in current window
 
+<br>
+
+----
+---
 
 ## Stack
 
@@ -119,6 +128,11 @@ substring without repeating characters.
 > Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
 - Hard ques, Requires revision from time to time
+
+<br>
+
+----
+---
 
 ## Linked List
 
@@ -170,12 +184,14 @@ public ListNode reverseList(ListNode head) {
 
 - No trick, just grind and being careful about logic
 
+<br>
 
+----
+---
 
-## Greedy and Intervals
+## Greedy
 
-### [Maximum Subarray Sum](https://leetcode.com/problems/maximum-subarray/) ⭐️
-- Kedane's algo
+-  [Maximum Subarray Sum](https://leetcode.com/problems/maximum-subarray/) ⭐️ : Kedane's algo
 
 ``` java
 public int maxSubArray(int[] nums) {
@@ -193,14 +209,60 @@ public int maxSubArray(int[] nums) {
 ```
 
 
-### [Jump Game](https://leetcode.com/problems/jump-game/description/)
-- Keep a right Max pointer
+- [Jump Game](https://leetcode.com/problems/jump-game/description/): Keep a right Max pointer
 
-### [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) ⭐️⭐️
-- Slightly tricky
-- What is the range you can reach from each jump?
+- [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) ⭐️⭐️: Slightly tricky, What is the range you can reach from each jump?
+
+- [Gas Station](https://leetcode.com/problems/gas-station/description/): Did it first go
+
+- [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/): Doable
+
+- [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/) : Not intuitive
+
+- [Partition Labels](https://leetcode.com/problems/partition-labels/description/) : easy approach
+
+- [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) ⭐️⭐️ : Not intuitive
+
+    ```
+    We initiate two pointers, one starting from the left and the other from the right of the array.
+
+    Starting from the left, we iterate through the array, counting the occurrences of open brackets '(' and asterisks '*'. Whenever we encounter a closed bracket ')', we decrement the count of open brackets. This decrement operation mimics the process of matching an open bracket with a closed one.
+
+    Simultaneously, we traverse from the right of the array, counting the occurrences of closed brackets ')' and asterisks '*'. Whenever we encounter an open bracket '(', we decrement the count of closed brackets. This simulates the process of matching a closed bracket with an open one.
+
+    Throughout this process, if either the count of open brackets or the count of closed brackets falls below zero (i.e., becomes negative), we immediately conclude that the sequence is invalid, as it indicates a surplus of closed brackets without corresponding open ones, or vice versa.
+
+    If neither of the counters becomes negative throughout the iteration, the sequence is valid, and we return true.
+    ```
+
+<br>
+
+----
+---
+
+## Intervals
+
+- [Insert Interval](https://leetcode.com/problems/insert-interval/description/)
+- [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
+- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) ⭐️ Same as finding max non overlapping intervals. Sort by end time and pick greedily
+- [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/description/) : Hard, Heap is used, saw sol 
+- [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) ⭐️⭐️ sort intervals and have a min heap to get available room
 
 
+<br>
+
+----
+---
+
+## Math & Geometry
+
+- Rotate Image : i <-> j then i <-> n-i
+- Spiral Matrix
+- Set Matrix Zeroes: store the zeros on 0th row and 0th column
+- [Happy Number](https://leetcode.com/problems/happy-number/description/) ⭐️⭐️ Not easy, use hashmap or floyd to detect cycle
+- Plus One : TODO, dont feel like doing
+- Multiply Strings: TODO, dont feel like doing
+- Detect Squares: Looks easy
 
 
 
@@ -213,19 +275,6 @@ public int maxSubArray(int[] nums) {
 <br><br><br><br><br>
 <br><br><br><br><br>
 <br><br><br><br><br>
-
-
-Neetcode :
-
-- Gas Station : tricky, not intuitive
-- Hand of Straights : tricky
-- Merge Triplets to Form Target Triplet : tricky
-- Partition Labels : tricky but did own my own
-- Valid Parenthesis String : tricky
-
-
-
-
 
 Greedy :
 
@@ -238,10 +287,6 @@ Greedy :
 4. Huffman Coding (TODO)
 
 
-Intervals
 
-- Insert Interval : medium, did it on my own 
-- Merge Intervals : medium, did it on my own 
-- Non-overlapping Intervals : saw video 
-- Minimum Interval to Include Each Query : Heap is used, saw sol 
+
  
