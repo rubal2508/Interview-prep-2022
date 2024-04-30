@@ -115,7 +115,7 @@ Given an array nums containing n distinct numbers in the range [0, n], return th
 
 ### [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
 Given two integers a and b, return the sum of the two integers without using the operators + and -
-- Kinda hard, skipped
+- TODO: Kinda hard, skipped
 
 
 ### [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
@@ -136,5 +136,5 @@ for(int i=0; i<32; i++){
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0. 
 - Simple reverse using `/10` `%10` and `*10`
 - Keep a check of overflow at each step
-
+- TODO
 

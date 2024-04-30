@@ -61,7 +61,7 @@ public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
 <br><br>
 
-## BST operations implementation
+## BST operations implementation 
 - Construct : easy
 - Insert : easy
 - [Delete : TODO](https://leetcode.com/problems/delete-node-in-a-bst/description/)
