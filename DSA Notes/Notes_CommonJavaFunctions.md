@@ -2,15 +2,26 @@
 
 ## STL 
 
-#### Stack
+#### ArrayList 
+- add, get(i), set(i, T e)
+- contains(e), remove(e)
 
-``` java
-Stack<Integer> stack = new Stack<>();
-// peek(), pop(), push()
-```
+#### LinkedList 
+- addFirst, addLast
+- removeFirst, removeLast
+- getFirst, getLast
+
+#### Priority Queue
+- add, peek, poll, 
+- contains, remove
+
+
+#### Stack
+- peek, pop, push
+- `Stack<Integer> stack = new Stack<>()`
+
 
 #### String Builder
-
 - `StringBuilder pattern = new StringBuilder(word)`
 - `append()` 	
 - `toString()`
@@ -73,7 +84,7 @@ for (Map.Entry<String, Object> entry : hmap.entrySet()) {
 }
 ```
 
-#### Heaps and Custom Comparators
+#### Custom Comparators
 
 - Max Heap:
  
