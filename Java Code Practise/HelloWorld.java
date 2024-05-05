@@ -8,5 +8,5 @@ public class HelloWorld {
 }
 
 
-// javac -d bin HelloWorld.java 
-// java -cp bin HelloWorld
+// javac -d target HelloWorld.java 
+// java -cp target HelloWorld

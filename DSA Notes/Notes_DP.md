@@ -406,29 +406,47 @@ public int superEggDrop(int k, int n) {
 
 ```
 
+### [Matrix Chain Multiplication](https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1) ⭐️⭐️
+Find the min multiplications needed to multiply a chain of matrices
+- ref: [Coding blocks](https://www.youtube.com/watch?v=D1U74eFLg_g&ab_channel=CodingBlocks), [Pep Coding](https://www.youtube.com/watch?v=pEYwLmGJcvs&pp=ygUbbWF0cml4IGNoYWluIG11bHRpcGxpY2F0aW9u)
+- 2D dp, `dp[i][j]` contains the answer for chain of matrix `i` to `j`
+- Iterate the array and try to break the array at each point and do recursion on left and right partition
+- ` for(k=i, k<j, k++) foo(i,j) = Min(sol, (foo(i,k) + foo(k+1,j) + arr[i] * arr[k] * arr[j]))` 
 
-<br><br><br><br><br><br><br><br>
 
-TODO
+
+### [Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+- Not very diff but I dont like this ques
+
+
 
 ### [Optimal Game Strategy](https://leetcode.com/problems/predict-the-winner/description/) / [Stone Game](https://leetcode.com/problems/stone-game/description/)
 
 At each turn, the player takes one of the numbers from either end of the array. Return true if Player 1 can win the game. If the scores of both players are equal, then player 1 is still the winner
 
 - If size of array is even then player 1 can alway win (he can either pick all odds or all even positions)
+- If problem is only asking if player1 can win then dp will be slightly simpler, if problem asks the max possible score of player1 then it will be diff
 
+``` java
+class Solution {
+    HashMap<String, Integer> dp;
+    public boolean predictTheWinner(int[] nums) {
+        dp = new HashMap<>();
+        return foo(nums, 0, nums.length-1) >= 0;
+    }
 
+    public int foo(int[] nums, int i, int j){
+        String key = i + " " + j;
+        if(dp.containsKey(key)) return dp.get(key);
 
+        if(i > j) return 0;
 
-https://leetcode.com/problems/palindrome-partitioning-ii/description/
-
-https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/
-
-https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
-
-[matrix exponentiation]()
-
-[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+        int sol = Math.max(nums[i] - foo(nums, i+1, j) , nums[j] - foo(nums, i, j-1));
+        dp.put(key, sol);
+        return sol;
+    }
+}
+```
 
 
 
