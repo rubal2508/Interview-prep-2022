@@ -3,28 +3,29 @@
 ## STL 
 
 #### ArrayList 
-- add, get(i), set(i, T e)
-- contains(e), remove(e)
+- `add`, `get(i)`, `set(i, T e)`
+- `contains(e)`, `remove(e)`
 
 #### LinkedList 
-- addFirst, addLast
-- removeFirst, removeLast
-- getFirst, getLast
+- `addFirst`, `addLast`
+- `removeFirst`, `removeLast`
+- `getFirst`, `getLast`
 
 #### Priority Queue
-- add, peek, poll, 
-- contains, remove
+- `add`, `peek`, `poll`, 
+- `contains`, `remove`
 
 
 #### Stack
-- peek, pop, push
+- `peek`, `pop`, `push`
 - `Stack<Integer> stack = new Stack<>()`
 
 
 #### String Builder
 - `StringBuilder pattern = new StringBuilder(word)`
-- `append()` 	
+- `append(Object)` 	
 - `toString()`
+- `setChatAt(i,ch)`, `insert(i,Object)`
 
 
 #### String 

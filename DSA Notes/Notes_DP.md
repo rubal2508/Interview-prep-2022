@@ -429,21 +429,13 @@ At each turn, the player takes one of the numbers from either end of the array. 
 
 ``` java
 class Solution {
-    HashMap<String, Integer> dp;
     public boolean predictTheWinner(int[] nums) {
-        dp = new HashMap<>();
         return foo(nums, 0, nums.length-1) >= 0;
     }
 
     public int foo(int[] nums, int i, int j){
-        String key = i + " " + j;
-        if(dp.containsKey(key)) return dp.get(key);
-
         if(i > j) return 0;
-
-        int sol = Math.max(nums[i] - foo(nums, i+1, j) , nums[j] - foo(nums, i, j-1));
-        dp.put(key, sol);
-        return sol;
+        return Math.max(nums[i] - foo(nums, i+1, j) , nums[j] - foo(nums, i, j-1));
     }
 }
 ```

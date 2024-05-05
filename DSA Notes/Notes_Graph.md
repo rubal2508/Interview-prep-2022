@@ -19,7 +19,7 @@
 
 #### Recursive
   - $O(V+E)$
-  - Do DFS, the last leaf node to be put into a stack so it can be printed in last
+  - Do DFS, the last leaf node to be put into a stack first so it can be printed in last
 
 #### Iterative
   - $O(V+E)$
@@ -182,5 +182,6 @@
 - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) ⭐️ 
   - saw video, used bellmann ford, nice problem 
   - we need to clone dist array at each iteration because we want to limit the updates going beyond k
+  - `dist[v] = Math.min(dist[v], distClone[u]+w)`
 
 

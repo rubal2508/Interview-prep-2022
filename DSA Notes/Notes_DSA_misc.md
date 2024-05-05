@@ -111,6 +111,7 @@ substring without repeating characters.
 
 - Able to think on my own immediately
 - Have a deque all numbers in a way that deque is always decreasing from left to right. deque's leftmost element is always the biggest value in current window
+- Can add redundan elements in deque so we dont have to keep track of indices
 
 <br>
 
@@ -170,7 +171,7 @@ public ListNode reverseList(ListNode head) {
 
 > Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive. There is only one repeated number in nums, return this repeated number.
 
-- Vaiation of above question. Difficult to think on your own
+- Variation of above question. Difficult to think on your own
 
 ### [LRU Cache](https://leetcode.com/problems/lru-cache/description/) ⭐️⭐️⭐️
 
