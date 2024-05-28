@@ -51,8 +51,7 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
 - was able to O(n) anf O(n) space sol
-- Kedane's algorithm
-- I couldnt think of a constant space sol on my own
+- Kedane's algorithm: I couldnt think of a constant space sol on my own
 
 ``` java
 public int maxProfit(int[] prices) {
@@ -123,7 +122,7 @@ substring without repeating characters.
 ### [Min Stack](https://leetcode.com/problems/min-stack/description/) ⭐️
 > Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-- Was able to think on my own but soluton was slightly better
+- Was able to think on my own but soluton was slightly better (store redundant elements in a new stack)
 
 ### [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) ⭐️⭐️⭐️
 > Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.

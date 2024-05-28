@@ -10,7 +10,6 @@
 - Latency of a request increases if multiple microservices are tightly coupled with each other as services will be dependant on each other to serve a request
 - ServiceA might break if there are changes in serviceB, Hard to monitor and keep track
 - Transaction management is hard. Each service will have its own transaction in its DB. Hard to mainting Atomicity across multiple services. Easy to roll back in a Monolith
-- 
 
 
 ### Decomposition Patten:

@@ -325,7 +325,7 @@ Given a string s, return the longest
 palindromic subsequence's length in s.
 
 - Reverse `s1` to get `s2`, find LCS of both 
-- consider a string window `i` to `j` if `s[i] == s[j]` then `dp[i][j] = 2 + dp[i+1][j-1]` else `dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1])`
+- Another approach: consider a string window `i` to `j` if `s[i] == s[j]` then `dp[i][j] = 2 + dp[i+1][j-1]` else `dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1])`
 
 
 
@@ -420,7 +420,7 @@ Find the min multiplications needed to multiply a chain of matrices
 
 
 
-### [Optimal Game Strategy](https://leetcode.com/problems/predict-the-winner/description/) / [Stone Game](https://leetcode.com/problems/stone-game/description/)
+### [Optimal Game Strategy](https://leetcode.com/problems/predict-the-winner/description/) / [Stone Game](https://leetcode.com/problems/stone-game/description/) ⭐️⭐️
 
 At each turn, the player takes one of the numbers from either end of the array. Return true if Player 1 can win the game. If the scores of both players are equal, then player 1 is still the winner
 

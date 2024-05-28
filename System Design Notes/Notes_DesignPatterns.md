@@ -233,7 +233,7 @@ public class SpringMainApp{
 - Complex Object Creation: If your class has a large number of parameters or optional parameters, the builder pattern can make object creation more readable and flexible.
 - Method Chaining: Builders often use method chaining, which allows you to chain multiple method calls together, making the code more concise and readable.
 - Immutability: In many cases, builders are used to create immutable objects, where once the object is constructed, its state cannot be changed. This can be desirable for ensuring thread safety and preventing unintended modifications.  
-- Note private constructor & inner static class
+- Note: private constructor & inner static class
 <br><br>
 
 ``` java

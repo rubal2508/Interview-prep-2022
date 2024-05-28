@@ -12,12 +12,12 @@
 - `getFirst`, `getLast`
 
 #### Priority Queue
-- `add`, `peek`, `poll`, 
+- `peek`, `add`, `poll`,
 - `contains`, `remove`
 
 
 #### Stack
-- `peek`, `pop`, `push`
+- `peek`, `push`, `pop`
 - `Stack<Integer> stack = new Stack<>()`
 
 
@@ -26,11 +26,13 @@
 - `append(Object)` 	
 - `toString()`
 - `setChatAt(i,ch)`, `insert(i,Object)`
+- `sb = sb.reverse()` 
 
 
 #### String 
 
-- `myName.setCharAt(i, '*')`
+- Does not exisit: `myName.setCharAt(i, '*')`
+- `char[] chArr = str.toCharArray()`
 - `String 	indexOf(String str)` : Returns the index within this string of the first occurrence of the specified substring.
 - `s.substring(0,n)`
 - `String[] preList = data.split(" ");`
