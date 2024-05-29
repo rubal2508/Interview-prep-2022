@@ -1,4 +1,4 @@
-## TODO: [38. Java VirtualThreads vs Normal Threads || ThreadLocal in Java](https://youtu.be/pXVEEfYMwws?si=SxrFkp7Q6e_Hyglf)
+## [38. Java VirtualThreads vs Normal Threads || ThreadLocal in Java](https://youtu.be/pXVEEfYMwws?si=SxrFkp7Q6e_Hyglf)
 
 ![Markdown Logo](Notes_images/10.1.png)
 

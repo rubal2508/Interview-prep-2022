@@ -1,5 +1,7 @@
 ## [30. Thread Creation, Thread Lifecycle and Inter-Thread Communication | Multithreading in Java: Part2](https://www.youtube.com/watch?v=AYiE7_loIsE&ab_channel=Concept%26%26Coding-byShrayansh)
 
+[Notes link]()
+
 ![Markdown Logo](Notes_images/2.1.png)
 
 ![Markdown Logo](Notes_images/2.2.png)
