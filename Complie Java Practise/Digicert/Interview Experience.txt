@@ -1,0 +1,114 @@
+
+String s = "abc"; --> pointer1
+
+String s1 = s + "pqr";
+
+s = "xyz"; 
+
+String s2 = "abc"; --> pointer1
+
+--------
+
+"abc" , "xyz" , "abcpqr", "pqr"
+
+
+String s3 = "def";
+
+String s4 = new String("def");
+
+
+
+
+
+class Student implements Comparable{
+
+    int id;
+    String name;
+
+    Student(int a, String b){
+        id = a;
+        name = b;
+    }
+
+
+    public int compareTo(Student s1){
+        return this.id - s1.id;
+    }
+
+    @Override
+    public boolean equalTo(Student s1){
+        return s.id == s1.id && s.name == s1.name;
+    }
+}
+
+TreeSet<Student> set = new TreeSet<>();
+
+-------------------------------------------
+
+public interface MyInterface{
+
+    public void myMethod(int a, int b);
+
+}
+
+public interface MyInterface1 extends MyInterface{
+
+    public void myMethod1(int a, int b);
+
+}
+
+
+public class MyClass implements MyInterface1{
+
+    ${abc.my} 
+    int value;
+
+    public void myMethod(int a, int b){
+        System.getProperty("abc.my");
+        System.out.println(a+b+value);
+    }
+
+    public void myMethod1(int a, int b){
+
+        System.out.println(a+b);
+    }
+}
+
+
+- Tell me about yourself 
+- What are some technical challenges you have faced 
+- Convert Roman Number to Integer 
+
+- How many objects will be created in System.out.println(i + " " + ch);
+- How many objects will be created in String s = "abc"; String s1 = s + "pqr"; s = "xyz"; 
+- Diff ways to initialise string. << String s3 = "def"; String s4 = new String("def") >> 
+- What is the Difference between them, what is the need for new String("def")
+
+- What collections you have worked upon
+- You have to create a TreeSet of custom class. implement it. what interfaces would you implement and what methods would you override 
+- what is hashcode method
+- how will treeset handle duplicate elements 
+
+- Write interface 
+- How can we have an interface that inherits another interface. what will the use case of this?
+- how can i have a method in interface that is optional to imlement 
+
+- Tell me about exceptions in java
+- what is parent of Exception class? who else is child of throwable except Exception
+- how will you handle/prevent outofmemory exception? 
+
+- 5 kafka consumers, msg should be processed by only 1 consumer  
+- 5 kafka consumers are subscribed to same topic. Message will have an identifier for market, each consumer belongs to a market. msg should onlh go to its markets consumer. how will you do it? 
+
+
+- Have you create a module from scratch
+
+- How to refer variables from application properties files
+- Difference between env variables, program arguments, vm options
+- how to refer system variables
+- how spring knows which env variable to call: stg, prod, dev? do we tell it or it does automatically
+
+- How many ways to do dependency injection, constructor injection?
+- How spring knows which class to inject, if you are autowiring an interface 
+
+- What databases you use : I interrupted the call saying its gone too long. 
