@@ -64,32 +64,82 @@ Used when we are migrating monolith to a microservice
 
 - Ref: [Back-Of-The-Envelope Estimation for System Design Interview | Capacity Planning of Facebook | HLD](https://youtu.be/WZjSFNPS9Lo?si=EYDFesSEfYFoaZmk)
 
-- Cheat sheet 
+### Cheat sheet 
 
-| Zeros     | Traffic     | Storage |
-| --------- | ----------- | ------- |
-| $10^3$    | Thousand    | KB      |
-| $10^6$    | Million     | MB      |
-| $10^9$    | Billion     | GB      |
-| $10^{12}$ | Trillion    | TB      |
-| $10^{15}$ | Quadrillion | PB      |
+  | Zeros     | Traffic     | Storage |
+  | --------- | ----------- | ------- |
+  | $10^3$    | Thousand    | KB      |
+  | $10^6$    | Million     | MB      |
+  | $10^9$    | Billion     | GB      |
+  | $10^{12}$ | Trillion    | TB      |
+  | $10^{15}$ | Quadrillion | PB      |
 
-<br>
-
-
-| Data         | Storage |
-| ------------ | ------- |
-| ASCII Char   | 1 Byte  | 
-| Unicode Char | 2 Byte  |
-| Long Double  | 8 Byte  |
-| Image        | 500 KB  |
-
-<br>
+  <br>
 
 
+  | Data         | Storage |
+  | ------------ | ------- |
+  | ASCII Char   | 1 Byte  | 
+  | Unicode Char | 2 Byte  |
+  | Long Double  | 8 Byte  |
+  | Image        | 500 KB  |
+
+  <br>
 
 
-- Steps for estimations :
+### Useful common things:
+  - Seconds per day : 100,000
+  - One server can handle about 100-1000 requests per second. There may be multiple requests needed for each query
+  - 1 million requests per day ~ 10 per sec  
+
+
+### [Latency numbers every programmer should know](https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf) 
+
+| Operation                             | Time in ns | Time in ms (1ms = 1,000,000 ns) |
+|---------------------------------------|------------|---------------------------------|
+| L1 cache reference                    | 1          |                                 |
+| Branch misprediction                  | 3          |                                 |
+| L2 cache reference                    | 4          |                                 |
+| Mutex lock/unlock                     | 17         |                                 |
+| Main memory reference                 | 100        |                                 |
+| Compress 1 kB with Zippy              | 2,000      | 0.002                           |
+| Read 1 MB sequentially from memory    | 10,000     | 0.010                           |
+| Send 2 kB over 10 Gbps network        | 1,600      | 0.0016                          |
+| SSD 4kB Random Read                   | 20,000     | 0.020                           |
+| Read 1 MB sequentially from SSD       | 1,000,000  | 1                               |
+| Round trip within same datacenter     | 500,000    | 0.5                             |
+| Read 1 MB sequentially from disk      | 5,000,000  | 5                               |
+| Read 1 MB sequentially from 1Gbps     |            |                                 |
+| network                               | 10,000,000 | 10                              |
+| Disk seek                             | 10,000,000 | 10                              |
+| TCP packet round trip between         |            |                                 |
+| continents                            | 150,000,000| 150                             |
+
+Therefore, it is possible to read:
+- sequentially from HDD at a rate of ~200MB per second
+- sequentially from SSD at a rate of ~1 GB per second
+- sequentially from main memory at a rate of ~100GB per second (burst rate)
+- sequentially from 10Gbps Ethernet at a rate of ~1000MB per second
+
+No more than 6-7 round trips between Europe and the US per second are possible, but approximately 2000 per second can be achieved within a datacenter.
+
+
+Sample calculation:
+- What is the overall latency of retrieving 30 256kB images from one server?
+  - Naïve design: do all the work on one machine - dominated by disk seek time.
+
+- Reads required to generate page:
+  - 30 images / 2 disks per machine = 15
+
+- Time to read one image from HDD
+  - (256KB / 1MB) * 5 ms + 10 ms seek = 11.28 ms
+-  Approximate time to generate results:
+  - 15 reads * 11.28 ms = 169.2 ms
+
+- One HDD-based server can generate 1000 ms / 169.2 ms ~= 5 result pages per second.
+
+
+### Steps for estimations
   1. Estimate Traffic 
       - Daily Active Users (DAU)
       - Queries per second  = (DAU * Query per user) / seconds per day
@@ -99,12 +149,8 @@ Used when we are migrating monolith to a microservice
   3. Estimate RAM
   4. Trade offs (CAP theorm)
 
-- Useful common things:
-  - Seconds per day : 100,000
-  - One server can handle about 100-1000 requests per second. There may be multiple requests needed for each query
-  - 1 million per day ~ 10 per sec  
-- [Latency numbers every programmer should know](https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
-) 
+
+
 
 
 

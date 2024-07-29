@@ -14,6 +14,7 @@
 #### Priority Queue
 - `peek`, `add`, `poll`,
 - `contains`, `remove`
+- Default is min heap
 
 
 #### Stack
@@ -81,6 +82,12 @@ Arrays.stream(dp).forEach(a -> Arrays.fill(a, -1));
 #### Iterating an HashMap
 
 ``` java
+for (String key : hmap.keySet()) {
+    Object value = hmap.get(key);
+}
+```
+
+``` java
 for (Map.Entry<String, Object> entry : hmap.entrySet()) {
     String key = entry.getKey();
     Object value = entry.getValue();
@@ -109,7 +116,7 @@ PriorityQueue<Student> pq = new PriorityQueue<Student>(5, new Sortbyroll());
 
 ``` java
 Arrays.sort(intervals, (a,b) -> {
-    if(a[0] == b[0]) return a[1] - b[1];
+    if(a[0] == b[0]) return b[1] - a[1];
     else return a[0] - b[0];
 });
 ```

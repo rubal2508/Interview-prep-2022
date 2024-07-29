@@ -32,6 +32,7 @@ class GFG {
         if (x_rep == y_rep)
             return;
 
+        // jiski rank kam h uska parent update hoga
         if (ranks[x_rep] < ranks[y_rep])
             parent[x_rep] = y_rep;
 
@@ -39,6 +40,7 @@ class GFG {
             parent[y_rep] = x_rep;
 
         else {
+            // same rank h to ek ka parent update krdo, dusre ki rank update krdo
             parent[y_rep] = x_rep;
 
             ranks[x_rep]++;

@@ -1,0 +1,281 @@
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+
+    public static Map<String, String> findNextHops(List<PbrEntry> pbrEntries2, List<String> ipAddresses) {
+        //TODO: Write your solution here
+
+        List<PbrEntry> pbrEntries = new ArrayList<>(pbrEntries2);
+
+        Collections.sort(pbrEntries, (a,b)->{
+          return compare(a,b);
+        });
+
+        Map<String, String> sol = new HashMap<>();
+
+        for(String ipAddress : ipAddresses){
+
+            for(PbrEntry pbrEntry : pbrEntries){
+                String ipv4 = pbrEntry.ipv4Subnet;
+                String nextHop = pbrEntry.nextHop;
+
+                if(contains(ipv4, ipAddress)){
+                  if(!sol.containsKey(ipAddress)) sol.put(ipAddress, nextHop);
+                  break;
+                }
+            }
+
+            if(!sol.containsKey(ipAddress)) sol.put(ipAddress, ipAddress);
+        }
+
+        // System.out.println(contains("168.19.100.34/32", "168.19.100.34"));
+
+        return sol;
+    }
+
+    private static class PbrEntry {
+
+        public final String ipv4Subnet;
+        public final String nextHop;
+
+        private PbrEntry(String ipv4Subnet, String nextHop) {
+            this.ipv4Subnet = ipv4Subnet;
+            this.nextHop = nextHop;
+        }
+    }
+
+    private static int compare(PbrEntry pe1, PbrEntry pe2){
+        int p1 = Integer.parseInt(pe1.ipv4Subnet.split("[./]")[4]); 
+        int p2 = Integer.parseInt(pe2.ipv4Subnet.split("[./]")[4]);
+
+        return p2 - p1;
+    }
+
+    private static boolean contains(String ipv4Subnet, String ipAddress){
+        String[] ipv4Array = ipv4Subnet.split("[./]");  
+        String[] ipAddressArray = ipAddress.split("[./]");  
+        // System.out.println(Arrays.toString(ipAddressArray));
+        // 168, 19, 100, 0, 9 
+        int prefix = Integer.parseInt(ipv4Array[4]);
+        // System.out.println("prefix: " + prefix);
+
+        StringBuilder ipv4SB = new StringBuilder();
+        StringBuilder ipAddressSB = new StringBuilder();
+
+        for(int i=0; i<=3; i++){
+
+            int number = Integer.parseInt(ipv4Array[i]);
+            // System.out.println("number: " + number);
+            String binary = String.format("%8s", Integer.toBinaryString(number)).replace(' ', '0');
+            // System.out.println("binary: " + binary);
+            
+            ipv4SB.append(binary);
+
+
+            int numberAdd = Integer.parseInt(ipAddressArray[i]);
+            String binaryAdd = String.format("%8s", Integer.toBinaryString(numberAdd)).replace(' ', '0');
+            
+            ipAddressSB.append(binaryAdd);
+
+
+        }
+
+        String ipv4 = ipv4SB.toString();
+        String ipAddressBinary = ipAddressSB.toString();
+
+        // System.out.println("ipv4: " + ipv4); 
+        // System.out.println("ipAddressBinary: " + ipAddressBinary); 
+
+
+        for(int i=0; i<prefix; i++){
+          if(ipv4.charAt(i) !=  ipAddressBinary.charAt(i)) return false;
+        }
+        
+        return true;
+        // 10101000000100110110010000100010
+        // 10101000000100110110010000100010
+    }
+
+
+
+
+
+
+
+    // boolean : whether a IP address is part of subnet or not
+    // boolean : comparing 2 subnets 
+
+    /*
+
+    168.19.100.0/9 
+      168.0.0.0 - 168.127.255.255    ---> 168.19.100.34
+
+      10101000.00010011.01100100.00000000
+      10101000.00010011.01100100.00000000
+
+      168.19.100.0/9 
+
+      -> 19.100.0  --> 1 
+      00010011  --> 7
+      prefix + 000000 -> prefix + 111111
+
+
+      class {
+        int prefix 5
+        String subnetValue 0303030301223123
+
+
+      }
+
+
+
+
+
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* DO NOT EDIT - TEMPLATE CODE */ 
+    public static void main(String[] args) {
+        Set<Map.Entry<List<PbrEntry>, Map<String, String>>> entries = TEST_CASES.entrySet();
+        int i = 1;
+        for (Map.Entry<List<PbrEntry>, Map<String, String>> entry : entries) {
+            System.out.print("Test case " + i++ + ": ");
+            Map<String, String> nextHopResults = entry.getValue();
+            List<String> ipAddresses = nextHopResults.keySet().stream().toList();
+            Map<String, String> nextHops = findNextHops(entry.getKey(), ipAddresses);
+            if (nextHops == null || nextHops.size() != ipAddresses.size()) {
+                System.out.println("FAILED");
+                System.out.println("Expected next-hops: " + mapToString(nextHopResults));
+                System.out.println("Actual next-hops: " + mapToString(nextHops));
+                continue;
+            }
+            boolean failed = false;
+            for (String ipAddress : ipAddresses) {
+                if (!nextHopResults.get(ipAddress).equals(nextHops.get(ipAddress))) {
+                    System.out.println("FAILED");
+                    System.out.println("Expected next-hops: " + mapToString(nextHopResults));
+                    System.out.println("Actual next-hops: " + mapToString(nextHops));
+                    failed = true;
+                    break;
+                }
+            }
+            if (failed) {
+                continue;
+            }
+            System.out.println("PASSED");
+        }
+    }
+
+    public static String mapToString(Map<?, ?> map) {
+        if (map == null) {
+            return "null";
+        }
+        return map.keySet().stream().map(key -> key + "=" + map.get(key)).collect(Collectors.joining(", ", "{", "}"));
+    }
+
+    private static final Map<List<PbrEntry>, Map<String, String>> TEST_CASES = new HashMap<>();
+
+    static {
+        TEST_CASES.put(
+            List.of(
+                new PbrEntry("168.19.100.34/32", "1.1.1.1"),
+                new PbrEntry("0.0.0.0/0", "1.1.1.5"),
+                new PbrEntry("168.19.100.0/24", "1.1.1.3"),
+                new PbrEntry("168.19.100.0/8", "1.1.1.4"),
+                new PbrEntry("168.19.100.0/25", "1.1.1.2")
+            ),
+            Map.of(
+                "168.19.100.34",
+                "1.1.1.1",
+                "168.19.100.198",
+                "1.1.1.3",
+                "169.0.0.0",
+                "1.1.1.5",
+                "168.20.100.23",
+                "1.1.1.4"
+            )
+        );
+        TEST_CASES.put(
+            List.of(
+                new PbrEntry("192.10.0.0/16", "1.1.1.1"),
+                new PbrEntry("10.10.0.0/16", "1.1.1.2"),
+                new PbrEntry("168.19.0.0/16", "1.1.1.3"),
+                new PbrEntry("10.11.0.0/16", "1.1.1.4"),
+                new PbrEntry("10.11.0.189/31", "1.1.1.5"),
+                new PbrEntry("10.11.0.11/29", "1.1.1.6")
+            ),
+            Map.of(
+                "192.10.9.11",
+                "1.1.1.1",
+                "174.19.20.31",
+                "174.19.20.31",
+                "10.10.10.10",
+                "1.1.1.2",
+                "10.11.11.11",
+                "1.1.1.4",
+                "10.11.0.188",
+                "1.1.1.5",
+                "10.11.0.9",
+                "1.1.1.6"
+            )
+        );
+        TEST_CASES.put(
+            List.of(),
+            Map.of("192.10.9.11", "192.10.9.11", "10.10.10.13", "10.10.10.13", "174.19.20.31", "174.19.20.31")
+        );
+    }
+}

@@ -13,7 +13,7 @@ public class ScannerInput {
         */
 
 
-        Scanner scn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // read an int matrix 
         /* 3 5
@@ -22,14 +22,14 @@ public class ScannerInput {
          * 4 8 2 2 1
          */
 
-        int n = scn.nextInt();
-        int m = scn.nextInt();
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
         int[][] matrix = new matrix[n][m];
 
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < m; j++) {
-                matrix[i][j] = scn.nextInt();
+                matrix[i][j] = sc.nextInt();
             }
         }
     }
