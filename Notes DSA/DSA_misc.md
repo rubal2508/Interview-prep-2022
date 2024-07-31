@@ -9,7 +9,7 @@
 - `["aman","garg"] -> "4aman4garg"` what if size of a string is more than 1 digit?
 - `["aman","amangargamangarg","garg"] -> "4#aman12#amangargamangarg4#garg"`
 
-### [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) ⭐️⭐️
+### [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) ⭐️
 > Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. 
 
 - Saw solution
@@ -74,14 +74,14 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-### [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) ⭐️
+### [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) ⭐️⭐️
 
 >Given a string s, find the length of the longest 
 substring without repeating characters.
 
 - Kinda frustrating, no major trick, saw sol, used set
 
-### [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) ⭐️⭐️
+### [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) ⭐️⭐️⭐️
 
 > You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times. Return the length of the longest substring containing the same letter you can get after performing the above operations.
 
