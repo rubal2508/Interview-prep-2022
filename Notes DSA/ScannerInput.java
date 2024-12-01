@@ -16,7 +16,7 @@ public class ScannerInput {
         Scanner sc = new Scanner(System.in);
 
         // read an int matrix 
-        /* 3 5
+        /* 3 5 
          * 1 2 3 4 5
          * 1 2 3 2 4
          * 4 8 2 2 1

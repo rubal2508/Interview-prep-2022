@@ -120,10 +120,10 @@ Return the number of combinations that make up that amount. If that amount of mo
 - `dp[currAmount][coin_i] =  dp[currAmount][coin_i-1] + dp[currAmount - coins[coin_i]][coin_i]`
 
 
-### [Target Sum](https://leetcode.com/problems/target-sum/description/)
+### [Target Sum](https://leetcode.com/problems/target-sum/description/) ⭐️
 You are given an integer array `nums` and an integer `target`. Return the number of different expressions that you can build using +/-, which evaluates to `target`. For example, if `nums = [2, 1]`, you can add a `'+'` before `2` and a `'-'` before `1` and concatenate them to build the expression `"+2-1"`.
 
-- No hint needed, can be done
+- No hint needed, can be done (Wasnt able to do after 6 months)
 - `return foo(nums, currSum-nums[i], target, i+1) + foo(nums, currSum+nums[i], target, i+1)`
 
 ### [Interleaving String](https://leetcode.com/problems/interleaving-string/description/) ⭐️

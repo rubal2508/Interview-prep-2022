@@ -65,6 +65,8 @@
 
 ## Others
 
+#### Learn about split function regex
+
 #### Print an Array
 
 ``` java

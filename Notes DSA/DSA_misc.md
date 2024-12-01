@@ -260,7 +260,7 @@ public int maxSubArray(int[] nums) {
 - Spiral Matrix
 - Set Matrix Zeroes: store the zeros on 0th row and 0th column
 - [Happy Number](https://leetcode.com/problems/happy-number/description/) ⭐️⭐️ Not easy, use hashmap or floyd to detect cycle
-- Plus One : TODO, dont feel like doing
+- [Plus One](https://leetcode.com/problems/plus-one/description/) : Okay question to test basics, good for practise after a long time.
 - Multiply Strings: TODO, dont feel like doing
 - Detect Squares: Looks easy
 
