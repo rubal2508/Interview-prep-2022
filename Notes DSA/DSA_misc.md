@@ -247,6 +247,8 @@ public int maxSubArray(int[] nums) {
 - [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) ⭐️ Same as finding max non overlapping intervals. Sort by end time and pick greedily
 - [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/description/) : Hard, Heap is used, saw sol 
 - [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) ⭐️⭐️ sort intervals and have a min heap to get available room
+- .
+- Last done Nov 2024
 
 
 <br>

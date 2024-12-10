@@ -1,5 +1,8 @@
 # Binary Search
 
+- Last done Nov 2024
+
+
 ### [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
 
 - Assume whole matrix is a linear array
