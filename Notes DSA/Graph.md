@@ -1,5 +1,6 @@
 # Graphs
 
+- Last finished 14 Jan 2025
 
 ### BFS
    - $O(V+E)$
@@ -50,6 +51,7 @@
 
 ### Shortest Path
 
+
 #### Dijkastra's Algo
 
   - Single source shortest path
@@ -66,6 +68,12 @@
     ```
 
   - Can use min heap to get the min dist node to improve time complexity 
+
+#### Undirected graph with equal weight on all edges
+  - Normal BFS and distance map
+  - No need for finalised map or fetching minimum distance, any distance updated will be finalised
+  - Maintain a queue, add all the neighbours in queue who are not present in distance map
+
 
 #### Bellmanford Algo
 
@@ -146,16 +154,16 @@
 #### Normal
 - [Number of Islands](https://leetcode.com/problems/number-of-islands/): Flod fill algo 
 - [Max Area of Island](https://leetcode.com/problems/max-area-of-island/): Flod fill algo 
-- [Clone Graph](https://leetcode.com/problems/clone-graph/): serious backtracking, wasnt intuitive, saw sol 
+- [Clone Graph](https://leetcode.com/problems/clone-graph/): serious backtracking, wasnt intuitive, saw sol (Didnt feel like doing in second attempt)
 - [Walls and Gates](https://leetcode.com/problems/walls-and-gates/): Doable
 - [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/): used to approach of As Far from Land as Possible
 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/): do dfs from ocean to inside
 - [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/): do dfs from outside
 - [Course Schedule](https://leetcode.com/problems/course-schedule/): Cycle detection, used dfs
-- [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/): Cycle detection, used Kahn's algo 
-- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/): union find and the property of tree that edges = n-1
+- [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) ⭐️ Cycle detection, used Kahn's algo 
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) ⭐️ union find and the property of tree that edges = n-1
 - [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/): easy
-- [Redundant Connection](https://leetcode.com/problems/redundant-connection/): disjoint set, union find algo 
+- [Redundant Connection](https://leetcode.com/problems/redundant-connection/) ⭐️ disjoint set, union find algo 
 - [Word Ladder](https://leetcode.com/problems/word-ladder/) ⭐️ kind hard, saw sol
   - If we can build a graph of words (where 2 words are connected if they have 1 character diff) then we can simply run bfs and find the distance.
   - We can optimise building the graph by having patterns as key and list of words as value. Neighbour of a word is all the lists of all patterns it can make

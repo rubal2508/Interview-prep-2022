@@ -136,26 +136,11 @@ substring without repeating characters.
 
 ## Linked List
 
-### [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ⭐️
+- Last finished 3 Jan
+
+### [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ⭐️⭐️
 
 - Struggled on this due to lack of practise
-
-``` java
-public ListNode reverseList(ListNode head) {
-    ListNode curr = head;
-    ListNode pre = null;
-
-    while(curr != null){
-        ListNode temp = curr.next;
-        curr.next = pre;
-        pre = curr;
-
-        if(temp == null) return curr;
-        curr = temp;
-    }
-    return null;
-}
-```
 
 ### [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) ⭐️⭐️
 
@@ -182,7 +167,7 @@ public ListNode reverseList(ListNode head) {
 
 ### [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) ⭐️⭐️⭐️
 
-- No trick, just grind and being careful about logic
+- Quite hard, must revice
 
 <br>
 
