@@ -1,5 +1,7 @@
 # Trie
 
+- Last revised at 4 feb 2025
+
 ### [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) ⭐️⭐️
 
 ``` java

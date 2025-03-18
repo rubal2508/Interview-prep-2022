@@ -1,5 +1,7 @@
 # Bitwise
 
+- Last revised 4 feb 2025
+
 - `&` `|` `~` `^` `<<` `>>`
 - `a<<1` means `a * 2^1` &  `a<<2` means `a * 2^2`
 - `a>>1` means `a / 2^1` &  `a>>2` means `a / 2^2`
@@ -45,7 +47,7 @@ NumberOfSetBits[n] = NumberOfSetBits[ n & (n-1) ] + 1
 
 ``` java
 a = a^b;
-b = b^a;
+b = a^b;
 a = a^b
 ```
 

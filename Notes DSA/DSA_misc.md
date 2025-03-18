@@ -2,6 +2,8 @@
 
 ## Array
 
+- Last finished 3 Feb
+
 ### [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/description/) ⭐️
 > You are given a list of strings. You need to encode it into a single string and then you need to decode it back into the list of strings. Strings can contain any character.
 
@@ -17,6 +19,8 @@
 - now traverse the list and see if you have all the next elements required to make the consecutive list. (make sure pre element does not belong in set so you only check when element is at the beginning)
 
 ## 2Pointer
+
+- Last finished 3 Feb 2025
 
 ### [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) ⭐️
 > Given sorted array and target. Find `(i,j)` such that `num[i] + num[j] = target`
@@ -44,6 +48,8 @@
 ---
 
 ## Sliding Window
+
+- Last finished 3 Feb 2025
 
 ### [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) ⭐️
 > You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -87,6 +93,8 @@ substring without repeating characters.
 
 - Kinda hard
 - Saw sol
+- Saw sol second time as well
+- Increase the window until the length of window - maxFreq <= k, then decrease the window until the condition is satisfied again. While decreasing we must recalculate the maxFreq O(26) everytime (This is not needed but its tricky to realise)
 
 ### [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
 
@@ -110,7 +118,7 @@ substring without repeating characters.
 
 - Able to think on my own immediately
 - Have a deque all numbers in a way that deque is always decreasing from left to right. deque's leftmost element is always the biggest value in current window
-- Can add redundan elements in deque so we dont have to keep track of indices
+- [Not sure] Can add redundan elements in deque so we dont have to keep track of indices
 
 <br>
 
@@ -118,6 +126,8 @@ substring without repeating characters.
 ---
 
 ## Stack
+
+- Last finished 3 Feb 2025
 
 ### [Min Stack](https://leetcode.com/problems/min-stack/description/) ⭐️
 > Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -252,7 +262,13 @@ public int maxSubArray(int[] nums) {
 - Detect Squares: Looks easy
 
 
+<br>
 
+----
+---
+
+## Interview Problems:
+- 
 
 
 

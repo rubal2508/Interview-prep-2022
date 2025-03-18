@@ -1,5 +1,7 @@
 # Heaps
 
+- Last finished 4 feb
+
 ### [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) ⭐️⭐️
 
 - Smaller elements add to leftHeap (Max heap), bigger elements add to right heap (Min heap)
